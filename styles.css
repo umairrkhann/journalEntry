@@ -1,0 +1,17 @@
+.general {
+    margin: 10px;
+    padding: 10px;
+  }
+  .heading{
+      text-align: center;
+      font-size: 30px;
+      text-decoration: underline;
+  }
+.costCenterDetailsRow {
+    display: flex;
+    justify-content: center;
+  }
+
+.costCenterDetailsRow .col-md-2 {
+    margin: 0 30px; /* Adjust the margin as needed */
+  }

@@ -1,0 +1,22 @@
+<span class="bi bi-plus" id="costcenterbutton"></span>
+
+function addCostCenterRow(e) {
+    const tbodyEl = document.querySelector('#costDiv');
+    const newRow =e.target.cloneNode(true);
+    console.log(e.target);
+
+    // Clear values in the new row
+    newRow.querySelectorAll('input').forEach(input => input.value = '');
+    newRow.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
+
+    // Append the new row to the table body
+    e.target.parent.appendChild(newRow);
+
+    // Show the new row
+    newRow.style.display = '';
+
+    // Scroll to the newly added row
+    newRow.scrollIntoView({ behavior: 'smooth', block: 'end' });
+  }
+  // Add this line to call the function when the button is clicked
+  // document.getElementById("add_item_button").addEventListener("click", addCostCenterRow);
